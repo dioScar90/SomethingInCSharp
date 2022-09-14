@@ -12,20 +12,11 @@ namespace SomethingInCSharp
         static void Blinker(string text)
         {
             int currentLineCursor = Console.CursorTop;
-            int milliseconds = 750;
-            bool visible = true;
             
             for (int i = 0; i < 3; i++) {
                 Console.SetCursorPosition(0, currentLineCursor);
                 ClearCurrentConsoleLine();
                 WriteNow(text, 50, false);
-                //Press Ctrl + C to Quit
-                // string alert = visible ? text : new String(' ', text.Length);
-                // visible = !visible;
-                // // Console.Clear();
-                // Console.SetCursorPosition(0, currentLineCursor);
-                // Console.Write(alert);
-                // Thread.Sleep(milliseconds);
             }
         }
 
@@ -74,8 +65,6 @@ namespace SomethingInCSharp
 
             if (dia == "13/09/2022") {
                 Console.WriteLine();
-                // WriteNow(loading+"...", 50, false);
-                // Console.Write(loading);
                 Blinker(loading+"...");
                 Thread.Sleep(800);
                 ClearCurrentConsoleLine();
