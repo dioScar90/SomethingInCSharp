@@ -1,0 +1,15 @@
+C:\xampp\htdocs\diogo\SomethingInCSharp\bin\Debug\net6.0\SomethingInCSharp.exe
+C:\xampp\htdocs\diogo\SomethingInCSharp\bin\Debug\net6.0\SomethingInCSharp.deps.json
+C:\xampp\htdocs\diogo\SomethingInCSharp\bin\Debug\net6.0\SomethingInCSharp.runtimeconfig.json
+C:\xampp\htdocs\diogo\SomethingInCSharp\bin\Debug\net6.0\SomethingInCSharp.dll
+C:\xampp\htdocs\diogo\SomethingInCSharp\bin\Debug\net6.0\SomethingInCSharp.pdb
+C:\xampp\htdocs\diogo\SomethingInCSharp\obj\Debug\net6.0\SomethingInCSharp.csproj.AssemblyReference.cache
+C:\xampp\htdocs\diogo\SomethingInCSharp\obj\Debug\net6.0\SomethingInCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\diogo\SomethingInCSharp\obj\Debug\net6.0\SomethingInCSharp.AssemblyInfoInputs.cache
+C:\xampp\htdocs\diogo\SomethingInCSharp\obj\Debug\net6.0\SomethingInCSharp.AssemblyInfo.cs
+C:\xampp\htdocs\diogo\SomethingInCSharp\obj\Debug\net6.0\SomethingInCSharp.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\diogo\SomethingInCSharp\obj\Debug\net6.0\SomethingInCSharp.dll
+C:\xampp\htdocs\diogo\SomethingInCSharp\obj\Debug\net6.0\refint\SomethingInCSharp.dll
+C:\xampp\htdocs\diogo\SomethingInCSharp\obj\Debug\net6.0\SomethingInCSharp.pdb
+C:\xampp\htdocs\diogo\SomethingInCSharp\obj\Debug\net6.0\SomethingInCSharp.genruntimeconfig.cache
+C:\xampp\htdocs\diogo\SomethingInCSharp\obj\Debug\net6.0\ref\SomethingInCSharp.dll
