@@ -9,14 +9,33 @@ namespace SomethingInCSharp
 {
     public class Program
     {
+        static void Blinker(string text)
+        {
+            int currentLineCursor = Console.CursorTop;
+            int milliseconds = 750;
+            bool visible = true;
+            
+            for (int i = 0; i < 3; i++) {
+                Console.SetCursorPosition(0, currentLineCursor);
+                ClearCurrentConsoleLine();
+                WriteNow(text, 50, false);
+                //Press Ctrl + C to Quit
+                // string alert = visible ? text : new String(' ', text.Length);
+                // visible = !visible;
+                // // Console.Clear();
+                // Console.SetCursorPosition(0, currentLineCursor);
+                // Console.Write(alert);
+                // Thread.Sleep(milliseconds);
+            }
+        }
 
         static void ClearCurrentConsoleLine()
         {
             int currentLineCursor = Console.CursorTop;
-            System.Threading.Thread.Sleep(100);
+            Thread.Sleep(100);
             Console.SetCursorPosition(0, currentLineCursor);
             Console.Write(new string(' ', Console.WindowWidth-1));
-            System.Threading.Thread.Sleep(100); 
+            Thread.Sleep(100); 
             Console.SetCursorPosition(0, currentLineCursor);
         }
 
@@ -27,7 +46,7 @@ namespace SomethingInCSharp
                     Console.WriteLine(bomdia[i]);
                 else
                     Console.Write(bomdia[i]);
-                System.Threading.Thread.Sleep(sec);
+                Thread.Sleep(sec);
             }
         }
 
@@ -48,17 +67,19 @@ namespace SomethingInCSharp
             Console.WriteLine();
 
             Console.WriteLine();
-            System.Threading.Thread.Sleep(500);
-            WriteNow(bomdia+"!", 25, true);
-            WriteNow("Que dia é hoje? ", 25, false);
+            Thread.Sleep(500);
+            WriteNow(bomdia+"!", 40, true);
+            WriteNow("Que dia é hoje? ", 40, false);
             string dia = Console.ReadLine();
 
             if (dia == "13/09/2022") {
                 Console.WriteLine();
-                WriteNow(loading+"...", 100, false);
-                System.Threading.Thread.Sleep(800);
+                // WriteNow(loading+"...", 50, false);
+                // Console.Write(loading);
+                Blinker(loading+"...");
+                Thread.Sleep(800);
                 ClearCurrentConsoleLine();
-                System.Threading.Thread.Sleep(100);
+                Thread.Sleep(100);
                 WriteNow(msg, 25, false);
             }
         }
