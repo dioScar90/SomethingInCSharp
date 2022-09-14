@@ -9,17 +9,6 @@ namespace SomethingInCSharp
 {
     public class Program
     {
-        static void Blinker(string text)
-        {
-            int currentLineCursor = Console.CursorTop;
-            
-            for (int i = 0; i < 3; i++) {
-                Console.SetCursorPosition(0, currentLineCursor);
-                ClearCurrentConsoleLine();
-                WriteNow(text, 50, false);
-            }
-        }
-
         static void ClearCurrentConsoleLine()
         {
             int currentLineCursor = Console.CursorTop;
@@ -38,6 +27,16 @@ namespace SomethingInCSharp
                 else
                     Console.Write(bomdia[i]);
                 Thread.Sleep(sec);
+            }
+        }
+        static void Blinker(string text)
+        {
+            int currentLineCursor = Console.CursorTop;
+            
+            for (int i = 0; i < 3; i++) {
+                Console.SetCursorPosition(0, currentLineCursor);
+                ClearCurrentConsoleLine();
+                WriteNow(text, 50, false);
             }
         }
 
